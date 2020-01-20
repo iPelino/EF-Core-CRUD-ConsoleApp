@@ -6,18 +6,7 @@ namespace CRUDStudentApp
 {
     public class StudentContext : DbContext
     {
-        // private readonly SqliteConnection _connection;
-        // private readonly DbContextOptions _options;
-
-        // public StudentContext()
-        // {
-        //     _connection = new SqliteConnection("Data Source=StudentDb.db");
-        //     _connection.Open();
-        //     _options = new DbContextOptionsBuilder()
-        //         .UseSqlite(_connection)
-        //         .Options;
-        //
-        // }
+        
         // private readonly string _connectionString;
         //
         // public StudentContext(string connectionString)
