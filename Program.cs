@@ -13,23 +13,23 @@ namespace CRUDStudentApp
                 
                 var repo = new StudentRepository(context);
                 
-                // Console.WriteLine("Enter Student Information");
-                //
-                // Console.WriteLine("Id:");
-                // var id = Convert.ToInt32(Console.ReadLine());
-                //
-                // Console.WriteLine("First Name:");
-                // var firstName = Console.ReadLine();
-                //
-                // Console.WriteLine("Last Name:");
-                // var lastName = Console.ReadLine();
-                //
-                // Console.WriteLine("Phone:");
-                // var phone = Console.ReadLine();
-                //
-                // var student = repo.Create(id, firstName,lastName,phone);
-                // // var student = repo.GetStudentById(2);
-                // Console.WriteLine("Student Identified by Id "+ student.Id +" has been Added Successfully!");
+                Console.WriteLine("Enter Student Information");
+                
+                Console.WriteLine("Id:");
+                var id = Convert.ToInt32(Console.ReadLine());
+                
+                Console.WriteLine("First Name:");
+                var firstName = Console.ReadLine();
+                
+                Console.WriteLine("Last Name:");
+                var lastName = Console.ReadLine();
+                
+                Console.WriteLine("Phone:");
+                var phone = Console.ReadLine();
+                
+                var student = repo.Create(id, firstName,lastName,phone);
+                // var student = repo.GetStudentById(2);
+                Console.WriteLine("Student Identified by Id "+ student.Id +" has been Added Successfully!");
 
                 Console.WriteLine("All the students");
                 var students = repo.GetAllStudents.ToList();
